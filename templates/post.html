@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{ object.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{object.description}}">
+    <meta name="robots" content="index, follow">
+    <meta charset="UTF-8">
+    <link rel="canonical" href="http://127.0.0.1:8000/{{object.slug}}">
+
+    <!--    Open Graph cho Facebook-->
+    <meta property="og:title" content="{{object.title}}">
+    <meta property="og:description" content="{{object.description}}">
+    <meta property="og:url" content="http://127.0.0.1:8000/{{object.slug}}">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="">
+    <!--    Cho Twitter -->
+    <meta name="twitter:title" content="{{object.title}}">
+    <meta name="twitter:description" content="{{object.description}}">
+    <meta name="twitter:url" content="http://127.0.0.1:8000/{{object.slug}}">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:card" content="summary">
+
+    <!--    Favicon -->
+    <link rel="shortcut icon"
+          href="https://www.inithtml.com/wp-content/themes/init-html-theme/img/fav/favicon-32x32.png"/>
+
+ <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153168022-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-153168022-1');
+    </script>
+</head>
+<body>
+<h1>This is title </h1>
+<h2>{{ object.title }}</h2>
+<h2>This is second h2</h2>
+<h2>This is 3rd h2</h2>
+<h3>This is h3</h3>
+<p>{% lorem 4 p random %}</p>
+</body>
+</html>
